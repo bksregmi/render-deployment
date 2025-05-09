@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Status Toggle</title>
+</head>
+<body>
+    <h2>Current Status: {{ status }}</h2>
+    <form action="{{ url_for('toggle') }}">
+        <button type="submit">Toggle Status</button>
+    </form>
+</body>
+</html>
