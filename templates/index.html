@@ -4,9 +4,16 @@
     <title>Status Toggle</title>
 </head>
 <body>
-    <h2>Current Status: {{ status }}</h2>
-    <form action="{{ url_for('toggle') }}">
-        <button type="submit">Toggle Status</button>
+    <h2>Normal Button Status: {{ status }}</h2>
+    <form action="{{ url_for('toggle') }}" method="get">
+        <input type="hidden" name="type" value="normal">
+        <button type="submit">Toggle Normal Button</button>
+    </form>
+
+    <h2>Emergency Button Status: {{ Emstat }}</h2>
+    <form action="{{ url_for('toggle', button_type='emergency') }}">
+        <input type="hidden" name="type" value="emergency">
+        <button type="submit">Toggle Emergency Button</button>
     </form>
 </body>
 </html>
