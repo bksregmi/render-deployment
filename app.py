@@ -3,7 +3,7 @@ import mysql.connector
 
 app=Flask(__name__)
 
-db_config = {'host':'sql12.freesqldatabase.com','user':'sql12777796','password':'SktVxwR9Hp','database':'sql12777796'}
+db_config = {'host':'sql12.freesqldatabase.com','user':'sql12779194','password':'Q2z6DmdZZD','database':'sql12779194'}
 
 def get_status(varname):
     # Connect to the database
