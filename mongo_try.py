@@ -1,5 +1,5 @@
 import pymongo
-
+print(pymongo.version)
 if __name__=="__main__":
     client=pymongo.MongoClient("mongodb+srv://workingyatri:QF0jmjKOfREtICoS@cluster1.fqv7v2j.mongodb.net/")
     print(client)
